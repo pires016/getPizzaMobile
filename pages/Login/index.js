@@ -21,7 +21,7 @@ const Login = () => {
                 userName: userName,
                 password: password
             });
-            setDataStorage('auth', JSON.stringfy(response.data));
+            setDataStorage('auth', JSON.stringify(response.data));
         } catch (error) {
             console.log(error);
             Alert.alert(
